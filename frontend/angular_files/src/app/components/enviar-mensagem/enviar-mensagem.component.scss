@@ -1,0 +1,59 @@
+.enviar-container {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #313131;
+  display: flex;
+  flex-direction: column;
+
+  .label {
+    font-weight: medium;
+    margin: 5px 0;
+    color: #f9f9f9;
+  }
+
+  .input-field {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border: 1px solid #f9f9f9;
+  }
+
+  .btn {
+    align-self: center;
+    margin-top: 20px;
+    padding: 10px 20px;
+    max-width: 200px;
+    background-color: #007bff;
+    color: #f9f9f9;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: bold;
+
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+
+  .mensage {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border: 1px solid #f9f9f9;
+    height: 150px;
+    resize: vertical;
+  }
+}
+
+h2 {
+  margin: 10px auto;
+  background: linear-gradient(to left, #f06b6b, #777cf4);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}

@@ -1,0 +1,14 @@
+<div class="enviar-container">
+  <h2>Enviar Mensagem</h2>
+
+  <label class="label" for="name">Digite seu nome: </label>
+  <input type="text" class="input-field" [(ngModel)]="nome">
+
+  <label class="label" for="email">Digire seu email: </label>
+  <input type="text" class="input-field" [(ngModel)]="email">
+
+  <label class="label" for="mensage">Escreva sua mensagem: </label>
+  <textarea class="mensage" [(ngModel)]="mensagem"></textarea>
+
+  <button class="btn" (click)="enviarMensagem()">Enviar Mensagem</button>
+</div>

@@ -10,8 +10,9 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/mensagens")
+@RequestMapping("/")
 public class MensagemController {
+
     @Autowired
     private MensagemService mensagemService;
 
@@ -22,7 +23,7 @@ public class MensagemController {
     }
 
     @GetMapping("/listar")
-    public ResponseEntity<List<Mensagem>> listarMensagens(){
+    public ResponseEntity<List<Mensagem>> listarMensagens() {
         List<Mensagem> mensagens = mensagemService.listarMensagens();
         return ResponseEntity.ok().body(mensagens);
     }
