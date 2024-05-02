@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MensagemService } from '../../services/mensagem.service';
@@ -14,7 +14,7 @@ import { MensagemService } from '../../services/mensagem.service';
   styleUrl: './enviar-mensagem.component.scss'
 })
 
-export class EnviarMensagemComponent implements OnInit {
+export class EnviarMensagemComponent {
 
   nome!: string;
   email!: string;
@@ -22,10 +22,6 @@ export class EnviarMensagemComponent implements OnInit {
 
   constructor(private envioMensagem: MensagemService) {}
 
-  ngOnInit(): void {
-    this.enviarMensagem();
-  }
-  
   enviarMensagem() {
     const dados = {
       nome: this.nome,

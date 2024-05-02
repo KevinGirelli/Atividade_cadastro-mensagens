@@ -16,4 +16,7 @@ export class MensagemService {
     return this.httpClient.post("http://localhost:8080/enviar", enviarMensagem, httpOptions);
   }
 
+  getMensagens(): Observable<any[]> {
+    return this.httpClient.get<any[]>('http://localhost:8080/listar');
+  }
 }

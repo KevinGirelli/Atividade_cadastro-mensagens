@@ -1,1 +1,20 @@
-<p>listar-mensagem works!</p>
+<div class="listar-container">
+  <h2>Listagem de Mensagens</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Email</th>
+        <th>Mensagem</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let mensagem of mensagens">
+        <td>{{ mensagem.nome }}</td>
+        <td>{{ mensagem.email }}</td>
+        <td>{{ mensagem.mensagem }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
