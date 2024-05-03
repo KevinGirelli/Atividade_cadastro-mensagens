@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { MensagemService } from '../../services/mensagem.service';
 import { NgFor } from '@angular/common';
 
@@ -12,12 +12,10 @@ import { NgFor } from '@angular/common';
   styleUrl: './listar-mensagem.component.scss'
 })
 
-export class ListarMensagemComponent implements OnInit {
+export class ListarMensagemComponent{
   mensagens: any[] = [];
 
-  constructor(private mensagemService: MensagemService) { }
-
-  ngOnInit(): void {
+  constructor(private mensagemService: MensagemService) {
     this.carregarMensagens();
   }
 
